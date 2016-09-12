@@ -1,0 +1,47 @@
+@objects
+	header		id		header
+	logo		css		img[alt='Axatrikx']
+	desc		css		.site-description
+	content		css		.content
+	sidebar		css		.sidebar-content
+
+= Header section = 
+	@on desktop
+		header:
+			width 1286px
+			height 211px
+	@on tablet
+		header:
+			width 575px
+			height 140px
+
+    = Logo =
+    	@on desktop, tablet
+	    	logo:
+	    		height 50px
+	    		width 200px
+    	@on desktop
+	    	logo:
+	    		near desc 20px left
+	    		inside header 50px left
+    	@on tablet
+	    	logo:
+	    		inside header 187px left
+    = Description =
+    	@on desktop
+	    	desc:
+	    		height 81px
+	    		inside header 270px left 
+	    		inside header 650 to 660px right
+	    		inside header 10px top
+    	@on tablet
+	    	desc:
+	    		absent
+= Content =
+	@on desktop
+		content:
+			width 640 to 650px
+			near sidebar 0px right 
+		sidebar:
+			width 340px
+			near content 0px left 
